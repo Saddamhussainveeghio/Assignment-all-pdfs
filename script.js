@@ -1,3 +1,5 @@
+// PDF 7 ASSIGNMENTS
+
 // Write a program to take “city” name as input from user. If
 // user enters “Karachi”, welcome the user like this:
 // “Welcome to city of lights”
@@ -100,3 +102,33 @@ if (true){
     alert("False");
     }
     // first message print but second not printed because false is always false 
+
+
+    // PDF 8 ASSIGNMENTS
+
+//     Write a program that takes a character (number or string)
+// in a variable & checks whether the given input is a
+// number, uppercase letter or lower case letter. (Hint: ASCII
+// codes:- A=65, Z=90, a=97, z=122).
+function checkCharType(char) {
+    // Converting the characters to its ASCII code
+    var charCode = char.charCodeAt(0);
+    
+    // Checking if the character is a number
+    if (char >= '0' && char <= '9') {
+        return "Number";
+    }
+    // Checking if the character is an uppercase letter
+    else if (charCode >= 65 && charCode <= 90) {
+        return "Uppercase Letter";
+    }
+    // Checking if the character is a lowercase letter
+    else if (charCode >= 97 && charCode <= 122) {
+        return "Lowercase Letter";
+    }
+    // jab number ya character na ho to 
+    else {
+        return "Special Character";
+    }
+}
+
